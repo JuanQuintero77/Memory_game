@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="style.css"></link>
+
+</head>
+<body>
+
+  <h3>Score:<span id="result"></span></h3>
+
+  <div class="grid">
+  </div>
+
+  <section id="modal-instructions">
+    <div id="divBtn1">
+    <button id="btnModal">Instructions</button>
+    </div>
+  <div id="myModal" class="modalContainer">
+    <div class="modal-content">
+      <span class="close">×</span> <h2>Please read the instructions</h2>
+      <p>This is a memory exercise, you're gonna find some food pictures, there a 2 by food type</p>
+      <p>so try to find the couples</p>
+
+    </div>
+  </div>
+  </section>
+
+  <section id="modal-name">
+    <div id="divBtn2">
+    <button id="btnModalName">Player Name</button>
+    </div>
+    <div id="myModal2" class="modalContainer">
+      <div class="modal-content">
+        <span class="closeName">×</span> <h2>What's your name player?</h2>
+        <form>
+          <input type="text" name="name" id="name">
+          <button type="button" id="send">OK</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div id="namePlayer"></div>
+  </section>
+
+  <section id="movements">
+    <div id="divBtn3">
+    <button id="showMovements">Show Movements</button>
+    </div>
+    <div id="divMovements"></div>
+  </section>
+
+
+
+</body>
+
+<script src="app.js" charset="utf-8"></script>
+</html>
